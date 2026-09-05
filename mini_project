@@ -1,0 +1,45 @@
+# ==========================================
+# AI RESEARCH EXPERIMENT REPORT
+# Day 1 Python Mini Project
+# ==========================================
+
+# Research information
+researcher_name = "Akash"
+research_topic = "Food Waste"
+model_name = "CNN"
+
+# Experiment information
+training_epochs = 50
+correct_predictions = 934
+total_predictions = 1000
+
+# Calculate model accuracy
+accuracy = correct_predictions / total_predictions
+
+# Round the accuracy
+rounded_accuracy = round(accuracy, 4)
+
+# Calculate topic length
+topic_length = len(research_topic)
+
+# Create research report using f-string
+report = f"""
+==========================================
+       AI RESEARCH EXPERIMENT REPORT
+==========================================
+
+Researcher       : {researcher_name}
+Research Topic   : {research_topic}
+Model            : {model_name}
+
+Training Epochs  : {training_epochs}
+Correct Results  : {correct_predictions}
+Total Results    : {total_predictions}
+
+Model Accuracy   : {rounded_accuracy:.2%}
+Topic Characters : {topic_length}
+
+==========================================
+"""
+
+print(report)
